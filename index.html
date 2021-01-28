@@ -11,25 +11,29 @@
       <h1>Etch a Sketch</h1>
     </header>
     <div class="container">
-      <div class="buttons-container">
-        <label for="color-picker">
-          <input type="color" name="color-picker" id="color-picker" />
-        </label>
-        <button class="rainbow-button">Rainbow</button>
-        <button class="clear-grid-button button">Clear</button>
+      <div class="options-container">
+        <h2>Options</h2>
+        <div class="buttons-container">
+          <label id="color-picker-label" for="color-picker">
+            <p>Color picker</p>
+            <input type="color" name="color-picker" id="color-picker" />
+          </label>
+          <button class="rainbow-button button">Rainbow</button>
+          <button class="clear-grid-button button">Clear</button>
+          <div class="slider-container">
+            <input
+              type="range"
+              min="1"
+              max="100"
+              value="16"
+              class="slider"
+              id="grid-size-slider"
+            />
+            <p id="grid-size-display">Grid size: 16x16</p>
+          </div>
+        </div>
       </div>
       <div class="grid-container"></div>
-      <div class="slider-container">
-        <input
-          type="range"
-          min="1"
-          max="100"
-          value="16"
-          class="slider"
-          id="grid-size-slider"
-        />
-        <p id="grid-size-display">Grid size: 16x16</p>
-      </div>
     </div>
     <script src="./app.js"></script>
   </body>
