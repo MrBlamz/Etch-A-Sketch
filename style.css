@@ -226,3 +226,30 @@ header h1 {
   height: 100%;
   background-color: white;
 }
+
+@media only screen and (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-container {
+    order: 1;
+    width: 70%;
+  }
+
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    order: 2;
+  }
+
+  .options-container h2 {
+    margin: 20px 0 10px 0;
+  }
+}
